@@ -293,7 +293,7 @@ module Hubspot
               end
             end
           else # model
-            Hubspot::Files::Files.build_from_hash(value)
+            self.class.build_from_hash(value)
           end
         end
 
