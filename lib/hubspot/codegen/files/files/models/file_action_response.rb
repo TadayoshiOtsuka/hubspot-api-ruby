@@ -83,7 +83,7 @@ module Hubspot
         def self.openapi_types
           {
             :'status' => :'String',
-            :'result' => :'File',
+            :'result' => :'Files',
             :'num_errors' => :'Integer',
             :'errors' => :'Array<StandardError>',
             :'requested_at' => :'DateTime',
