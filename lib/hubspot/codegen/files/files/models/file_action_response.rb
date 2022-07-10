@@ -83,7 +83,7 @@ module Hubspot
         def self.openapi_types
           {
             :'status' => :'String',
-            :'result' => :'File',
+            :'result' => :'Hash<String, String>',
             :'num_errors' => :'Integer',
             :'errors' => :'Array<StandardError>',
             :'requested_at' => :'DateTime',
@@ -319,7 +319,7 @@ module Hubspot
               is_nullable = self.class.openapi_nullable.include?(attr)
               next if !is_nullable || (is_nullable && !instance_variable_defined?(:"@#{attr}"))
             end
-            
+
             hash[param] = _to_hash(value)
           end
           hash
