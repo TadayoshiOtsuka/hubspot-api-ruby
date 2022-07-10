@@ -83,7 +83,7 @@ module Hubspot
         def self.openapi_types
           {
             :'status' => :'String',
-            :'result' => :'Files',
+            :'result' => :'File',
             :'num_errors' => :'Integer',
             :'errors' => :'Array<StandardError>',
             :'requested_at' => :'DateTime',
@@ -293,7 +293,7 @@ module Hubspot
               end
             end
           else # model
-            Hubspot::Files::Files.const_get(type).build_from_hash(value)
+            Hubspot::Files::Files.build_from_hash(value)
           end
         end
 
